@@ -59,6 +59,13 @@ class Filters extends BaseFilters
             'performance', // Performance Metrics
             'toolbar',     // Debug Toolbar
         ],
+		'cors' => [
+			'before' => [
+				'csrf',
+				'cors',
+			],
+],
+
     ];
 
     /**

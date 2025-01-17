@@ -27,21 +27,21 @@ class Database extends Config
     public array $default = [
         'DSN'          => '',
         'hostname'     => 'localhost',
-        'username'     => '',
+        'username'     => 'postgres',
         'password'     => '',
-        'database'     => '',
-        'DBDriver'     => 'MySQLi',
+        'database'     => 'study',
+        'DBDriver'     => 'Postgre',
         'DBPrefix'     => '',
         'pConnect'     => false,
         'DBDebug'      => true,
-        'charset'      => 'utf8mb4',
+        'charset'      => 'utf8',
         'DBCollat'     => 'utf8mb4_general_ci',
         'swapPre'      => '',
         'encrypt'      => false,
         'compress'     => false,
         'strictOn'     => false,
         'failover'     => [],
-        'port'         => 3306,
+        'port'         => 5432,
         'numberNative' => false,
         'dateFormat'   => [
             'date'     => 'Y-m-d',
@@ -160,13 +160,13 @@ class Database extends Config
      *
      * @var array<string, mixed>
      */
-    public array $tests = [
+   /* public array $tests = [
         'DSN'         => '',
         'hostname'    => '127.0.0.1',
         'username'    => '',
         'password'    => '',
         'database'    => ':memory:',
-        'DBDriver'    => 'SQLite3',
+        'DBDriver'    => 'Postgre',
         'DBPrefix'    => 'db_',  // Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE FOR CI DEVS
         'pConnect'    => false,
         'DBDebug'     => true,
@@ -177,7 +177,7 @@ class Database extends Config
         'compress'    => false,
         'strictOn'    => false,
         'failover'    => [],
-        'port'        => 3306,
+        'port'        => 5432,
         'foreignKeys' => true,
         'busyTimeout' => 1000,
         'dateFormat'  => [
@@ -185,7 +185,7 @@ class Database extends Config
             'datetime' => 'Y-m-d H:i:s',
             'time'     => 'H:i:s',
         ],
-    ];
+    ];*/
 
     public function __construct()
     {
